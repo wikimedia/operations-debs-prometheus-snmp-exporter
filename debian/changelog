@@ -1,0 +1,5 @@
+prometheus-snmp-exporter (0.2.0+ds-1) UNRELEASED; urgency=medium
+
+  * Initial packaging
+
+ -- Filippo Giunchedi <filippo@debian.org>  Fri, 24 Feb 2017 22:56:47 +0000

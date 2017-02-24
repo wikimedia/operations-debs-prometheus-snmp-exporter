@@ -1,0 +1,2 @@
+# The Go compiler is currently unable to produce read-only relocations
+prometheus-snmp-exporter: hardening-no-relro usr/bin/prometheus-snmp-exporter

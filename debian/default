@@ -1,0 +1,13 @@
+ARGS="-config.file /etc/prometheus/snmp.yml"
+
+# Usage of prometheus-snmp-exporter:
+#   -config.file string
+#     	Path to configuration file. (default "snmp.yml")
+#   -log.format value
+#     	Set the log target and format. Example: "logger:syslog?appname=bob&local=7" or "logger:stdout?json=true" (default "logger:stderr")
+#   -log.level value
+#     	Only log messages with the given severity or above. Valid levels: [debug, info, warn, error, fatal] (default "info")
+#   -version
+#     	Print version information.
+#   -web.listen-address string
+#     	Address to listen on for web interface and telemetry. (default ":9116")

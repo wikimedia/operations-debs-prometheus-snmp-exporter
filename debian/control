@@ -1,0 +1,26 @@
+Source: prometheus-snmp-exporter
+Section: net
+Priority: extra
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Filippo Giunchedi <filippo@debian.org>
+Build-Depends: debhelper (>= 9.0.0), dh-golang, golang-go, dh-systemd (>= 1.5),
+ golang-gopkg-yaml.v2-dev,
+ golang-github-beorn7-perks-dev,
+ golang-goprotobuf-dev,
+ golang-github-prometheus-common-dev,
+ golang-github-sirupsen-logrus-dev,
+ golang-prometheus-client-dev,
+ golang-protobuf-extensions-dev,
+ libsnmp-dev
+Standards-Version: 3.9.8
+Vcs-Git: https://anonscm.debian.org/git/pkg-go/packages/prometheus-snmp-exporter.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-go/packages/prometheus-snmp-exporter.git/
+Homepage: https://github.com/prometheus/snmp_exporter
+XS-Go-Import-Path: github.com/prometheus/snmp_exporter
+
+Package: prometheus-snmp-exporter
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, daemon
+Built-Using: ${misc:Built-Using}
+Description: Prometheus exporter for SNMP
+ XXX

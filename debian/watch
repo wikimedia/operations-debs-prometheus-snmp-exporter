@@ -1,0 +1,5 @@
+version=3
+
+opts="filenamemangle=s/(?:.*\/)?v?(\d[\d\.]*)\.tar\.gz/prometheus-snmp-exporter-$1.tar.gz/,dversionmangle=s/\+ds\d*$//" \
+         https://github.com/prometheus/snmp_exporter/tags \
+         (?:.*/)?v?(\d[\d\.]*)\.tar\.gz

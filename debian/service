@@ -1,0 +1,12 @@
+[Unit]
+Description=Prometheus exporter for SNMP
+Documentation=https://prometheus.io/docs/introduction/overview/
+
+[Service]
+Restart=always
+User=prometheus
+EnvironmentFile=/etc/default/prometheus-snmp-exporter
+ExecStart=/usr/bin/prometheus-snmp-exporter $ARGS
+
+[Install]
+WantedBy=multi-user.target

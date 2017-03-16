@@ -14,7 +14,7 @@ fi
 
 # Author: Filippo Giunchedi <filippo@debian.org>
 
-DESC="Prometheus exporter for MySQL server"
+DESC="Prometheus exporter for SNMP"
 DAEMON=/usr/bin/prometheus-snmp-exporter
 NAME=prometheus-snmp-exporter
 USER=prometheus
